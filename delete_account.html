@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account Deletion & Data Retention - Intent</title>
+  <title>Account Deletion & Data Retention - Outloop</title>
   <style>
-    :root {
+    :root, html.light, body.light {
       --primary: #FF4500;
       --danger: #E53935;
       --bg: #F6F2EC;
@@ -13,14 +13,26 @@
       --muted: #6B6861;
       --card-bg: #FFFFFF;
       --border: rgba(43, 43, 43, 0.08);
+      color-scheme: light;
+    }
+    html.dark, body.dark {
+      --primary: #FF4500;
+      --danger: #E53935;
+      --bg: #171717;
+      --text: #FFFFFF;
+      --muted: #8E8E93;
+      --card-bg: #2B2B2B;
+      --border: rgba(255, 255, 255, 0.08);
+      color-scheme: dark;
     }
     @media (prefers-color-scheme: dark) {
-      :root {
+      body:not(.light) {
         --bg: #171717;
         --text: #FFFFFF;
         --muted: #8E8E93;
         --card-bg: #2B2B2B;
         --border: rgba(255, 255, 255, 0.08);
+        color-scheme: dark;
       }
     }
     body {
@@ -116,10 +128,10 @@
 
     <div class="card">
       <h2>1. Overview & Immediate In-App Deletion</h2>
-      <p>In accordance with user privacy rights and app store data safety regulations, Intent provides an instantaneous and permanent self-serve mechanism to delete your account and all associated data.</p>
+      <p>In accordance with user privacy rights and app store data safety regulations, Outloop provides an instantaneous and permanent self-serve mechanism to delete your account and all associated data.</p>
       <p><strong>To delete your account immediately inside the app:</strong></p>
       <ol>
-        <li>Navigate to the <strong>Profile</strong> tab in Intent.</li>
+        <li>Navigate to the <strong>Profile</strong> tab in Outloop.</li>
         <li>Scroll down to the <strong>Danger Zone</strong> section.</li>
         <li>Tap <strong>Delete Account</strong> and confirm the warning prompt.</li>
       </ol>
@@ -142,7 +154,7 @@
 
     <div class="card">
       <h2>4. Manual Deletion Requests</h2>
-      <p>If you have uninstalled the app or are unable to access your device, you can request a manual deletion of your account records by emailing our data support team from the email address associated with your Intent account.</p>
+      <p>If you have uninstalled the app or are unable to access your device, you can request a manual deletion of your account records by emailing our data support team from the email address associated with your Outloop account.</p>
     </div>
 
     <div class="contact-box">
