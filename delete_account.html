@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Deletion & Data Retention - Intent</title>
+  <style>
+    :root {
+      --primary: #FF4500;
+      --danger: #E53935;
+      --bg: #F6F2EC;
+      --text: #171717;
+      --muted: #6B6861;
+      --card-bg: #FFFFFF;
+      --border: rgba(43, 43, 43, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171717;
+        --text: #FFFFFF;
+        --muted: #8E8E93;
+        --card-bg: #2B2B2B;
+        --border: rgba(255, 255, 255, 0.08);
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 24px 20px 48px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-block;
+      background-color: rgba(229, 57, 53, 0.12);
+      color: var(--danger);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin: 0 0 6px;
+      letter-spacing: -0.5px;
+    }
+    .date {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--danger);
+    }
+    p {
+      margin: 0 0 12px;
+      font-size: 14.5px;
+      color: var(--text);
+    }
+    ul, ol {
+      margin: 0 0 12px;
+      padding-left: 20px;
+      font-size: 14px;
+      color: var(--text);
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .contact-box {
+      background: rgba(229, 57, 53, 0.06);
+      border: 1px dashed var(--danger);
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+      margin-top: 24px;
+    }
+    .contact-box a {
+      color: var(--danger);
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Data Retention & Deletion</div>
+      <h1>Account & Data Deletion</h1>
+      <div class="date">Compliance with Google Play & App Store Standards</div>
+    </header>
+
+    <div class="card">
+      <h2>1. Overview & Immediate In-App Deletion</h2>
+      <p>In accordance with user privacy rights and app store data safety regulations, Intent provides an instantaneous and permanent self-serve mechanism to delete your account and all associated data.</p>
+      <p><strong>To delete your account immediately inside the app:</strong></p>
+      <ol>
+        <li>Navigate to the <strong>Profile</strong> tab in Intent.</li>
+        <li>Scroll down to the <strong>Danger Zone</strong> section.</li>
+        <li>Tap <strong>Delete Account</strong> and confirm the warning prompt.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>2. What Data Is Permanently Purged</h2>
+      <p>Upon triggering account deletion, the following data is irrevocably deleted:</p>
+      <ul>
+        <li><strong>Authentication Records:</strong> Your Firebase Authentication user account, user UID, linked Google token, email address, display name, and avatar URL are deleted immediately from Firebase servers.</li>
+        <li><strong>Local Application State:</strong> Your local preferences, enabled networks, custom filter overrides, strict mode configurations, and notification permissions are wiped.</li>
+        <li><strong>Usage Analytics & Counters:</strong> All local statistics (number of short videos hidden, feeds blocked, and time saved) are purged from your device storage.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Data Retention Timeline</h2>
+      <p>Deletion is immediate for user identity and local data. Any operational server logs related to authentication events are automatically expunged within 30 days as per Google Cloud standard security protocols.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Manual Deletion Requests</h2>
+      <p>If you have uninstalled the app or are unable to access your device, you can request a manual deletion of your account records by emailing our data support team from the email address associated with your Intent account.</p>
+    </div>
+
+    <div class="contact-box">
+      Need assistance with account or data deletion? Email:
+      <br><br>
+      <a href="mailto:delsigate@gmail.com?subject=Account%20Deletion%20Request">delsigate@gmail.com</a>
+    </div>
+  </div>
+</body>
+</html>
