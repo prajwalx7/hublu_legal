@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Intent</title>
+  <title>Privacy Policy - Outloop</title>
   <style>
-    :root {
+    :root, html.light, body.light {
       --primary: #FF4500;
       --bg: #F6F2EC;
       --text: #171717;
       --muted: #6B6861;
       --card-bg: #FFFFFF;
       --border: rgba(43, 43, 43, 0.08);
+      color-scheme: light;
+    }
+    html.dark, body.dark {
+      --primary: #FF4500;
+      --bg: #171717;
+      --text: #FFFFFF;
+      --muted: #8E8E93;
+      --card-bg: #2B2B2B;
+      --border: rgba(255, 255, 255, 0.08);
+      color-scheme: dark;
     }
     @media (prefers-color-scheme: dark) {
-      :root {
+      body:not(.light) {
         --bg: #171717;
         --text: #FFFFFF;
         --muted: #8E8E93;
         --card-bg: #2B2B2B;
         --border: rgba(255, 255, 255, 0.08);
+        color-scheme: dark;
       }
     }
     body {
@@ -115,7 +126,7 @@
 
     <div class="card">
       <h2>1. Our Privacy Philosophy</h2>
-      <p>Intent was created with a single core promise: <strong>we believe your attention belongs to you, not advertising algorithms</strong>. Our business model is not based on monetizing your private personal information, and our application is engineered to keep your browsing private, isolated, and local to your device.</p>
+      <p>Outloop was created with a single core promise: <strong>we believe your attention belongs to you, not advertising algorithms</strong>. Our business model is not based on monetizing your private personal information, and our application is engineered to keep your browsing private, isolated, and local to your device.</p>
     </div>
 
     <div class="card">
@@ -123,7 +134,7 @@
       <ul>
         <li><strong>Account Information:</strong> When you sign in using Google Authentication, we receive your name, email address, and profile picture avatar strictly to maintain your account identity and sync your settings across devices.</li>
         <li><strong>Local Usage & Shielding Statistics:</strong> Counters for short videos hidden and infinite feeds blocked are computed locally on your device to display your daily focus insights. These metrics stay strictly in your device's local storage.</li>
-        <li><strong>No Browsing History or Credentials:</strong> When you access social networks through Intent, you are browsing directly within a secure, sandboxed webview. Intent does not inspect, harvest, or log your account passwords, search histories, private messages, or payment details.</li>
+        <li><strong>No Browsing History or Credentials:</strong> When you access social networks through Outloop, you are browsing directly within a secure, sandboxed webview. Outloop does not inspect, harvest, or log your account passwords, search histories, private messages, or payment details.</li>
       </ul>
     </div>
 
@@ -144,7 +155,7 @@
 
     <div class="card">
       <h2>5. Third-Party Services</h2>
-      <p>Intent interacts with third-party web services (e.g. YouTube, Instagram, TikTok, Facebook) via standard browser sessions. Third-party sites govern their own privacy practices according to their respective policies. Intent's filter rules strip distracting feeds, algorithm recommendation carousels, and tracking elements.</p>
+      <p>Outloop interacts with third-party web services (e.g. YouTube, Instagram, TikTok, Facebook) via standard browser sessions. Third-party sites govern their own privacy practices according to their respective policies. Outloop's filter rules strip distracting feeds, algorithm recommendation carousels, and tracking elements.</p>
     </div>
 
     <div class="card">
