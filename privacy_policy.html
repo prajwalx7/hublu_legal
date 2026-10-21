@@ -3,171 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Outloop</title>
+  <title>Privacy Policy - Hublu</title>
   <style>
-    :root, html.light, body.light {
-      --primary: #FF4500;
+    :root, html, body {
       --bg: #F6F2EC;
       --text: #171717;
       --muted: #6B6861;
-      --card-bg: #FFFFFF;
-      --border: rgba(43, 43, 43, 0.08);
+      --link: #171717;
       color-scheme: light;
     }
-    html.dark, body.dark {
-      --primary: #FF4500;
-      --bg: #171717;
-      --text: #FFFFFF;
-      --muted: #8E8E93;
-      --card-bg: #2B2B2B;
-      --border: rgba(255, 255, 255, 0.08);
-      color-scheme: dark;
-    }
     @media (prefers-color-scheme: dark) {
-      body:not(.light) {
+      :root, html, body {
         --bg: #171717;
-        --text: #FFFFFF;
+        --text: #EDEDED;
         --muted: #8E8E93;
-        --card-bg: #2B2B2B;
-        --border: rgba(255, 255, 255, 0.08);
+        --link: #EDEDED;
         color-scheme: dark;
       }
+    }
+    html.dark, body.dark {
+      --bg: #171717;
+      --text: #EDEDED;
+      --muted: #8E8E93;
+      --link: #EDEDED;
+      color-scheme: dark;
+    }
+    html.light, body.light {
+      --bg: #F6F2EC;
+      --text: #171717;
+      --muted: #6B6861;
+      --link: #171717;
+      color-scheme: light;
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
       margin: 0;
       padding: 24px 20px 48px;
+      -webkit-font-smoothing: antialiased;
     }
-    .container {
+    .document {
       max-width: 680px;
       margin: 0 auto;
     }
-    header {
-      margin-bottom: 28px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-    }
-    .badge {
-      display: inline-block;
-      background-color: rgba(255, 109, 0, 0.15);
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
     h1 {
-      font-size: 26px;
-      font-weight: 800;
-      margin: 0 0 6px;
-      letter-spacing: -0.5px;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 4px;
+      color: var(--text);
+      letter-spacing: -0.3px;
     }
-    .date {
-      color: var(--muted);
+    .metadata {
       font-size: 13px;
-    }
-    .card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 20px;
-      border: 1px solid var(--border);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      color: var(--muted);
+      margin-bottom: 28px;
     }
     h2 {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: var(--primary);
+      margin: 28px 0 10px;
+      color: var(--text);
+      letter-spacing: -0.2px;
     }
     p {
-      margin: 0 0 12px;
+      margin: 0 0 14px;
       font-size: 14.5px;
       color: var(--text);
     }
-    ul {
-      margin: 0 0 12px;
-      padding-left: 20px;
-      font-size: 14px;
+    ul, ol {
+      margin: 0 0 16px;
+      padding-left: 22px;
+      font-size: 14.5px;
       color: var(--text);
     }
     li {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
-    .contact-box {
-      background: rgba(255, 109, 0, 0.08);
-      border: 1px dashed var(--primary);
-      border-radius: 14px;
-      padding: 16px;
-      text-align: center;
-      margin-top: 24px;
-    }
-    .contact-box a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 700;
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="badge">Legal & Privacy</div>
-      <h1>Privacy Policy</h1>
-      <div class="date">Effective Date: October 2026 • Version 1.0</div>
-    </header>
+  <div class="document">
+    <h1>Privacy Policy</h1>
+    <div class="metadata">Effective Date: October 2026 • Version 1.0</div>
 
-    <div class="card">
-      <h2>1. Our Privacy Philosophy</h2>
-      <p>Outloop was created with a single core promise: <strong>we believe your attention belongs to you, not advertising algorithms</strong>. Our business model is not based on monetizing your private personal information, and our application is engineered to keep your browsing private, isolated, and local to your device.</p>
-    </div>
+    <h2>1. Our Privacy Philosophy</h2>
+    <p>Hublu was created with a single core promise: we believe your attention belongs to you, not advertising algorithms. Our business model is not based on monetizing your private personal information, and our application is engineered to keep your browsing private, isolated, and local to your device.</p>
 
-    <div class="card">
-      <h2>2. What Information We Collect</h2>
-      <ul>
-        <li><strong>Account Information:</strong> When you sign in using Google Authentication, we receive your name, email address, and profile picture avatar strictly to maintain your account identity and sync your settings across devices.</li>
-        <li><strong>Local Usage & Shielding Statistics:</strong> Counters for short videos hidden and infinite feeds blocked are computed locally on your device to display your daily focus insights. These metrics stay strictly in your device's local storage.</li>
-        <li><strong>No Browsing History or Credentials:</strong> When you access social networks through Outloop, you are browsing directly within a secure, sandboxed webview. Outloop does not inspect, harvest, or log your account passwords, search histories, private messages, or payment details.</li>
-      </ul>
-    </div>
+    <h2>2. What Information We Collect</h2>
+    <ul>
+      <li><strong>Account Information:</strong> When you sign in using Apple, Google, or email authentication, we receive the account information you choose to share, such as your name, email address, and profile picture, strictly to maintain your account identity and sync your settings across devices.</li>
+      <li><strong>Local Usage & Shielding Statistics:</strong> Counters for short videos hidden and infinite feeds blocked are computed locally on your device to display your daily focus insights. These metrics stay strictly in your device's local storage.</li>
+      <li><strong>No Browsing History or Credentials:</strong> When you access social networks through Hublu, you are browsing directly within a secure, sandboxed webview. Hublu does not inspect, harvest, or log your account passwords, search histories, private messages, or payment details.</li>
+    </ul>
 
-    <div class="card">
-      <h2>3. How We Use Information</h2>
-      <p>Any collected information is utilized strictly to:</p>
-      <ul>
-        <li>Authenticate your session securely via Firebase Authentication.</li>
-        <li>Remember your enabled platforms and custom filter configurations.</li>
-        <li>Deliver non-algorithmic notification alerts for direct messages (if enabled).</li>
-      </ul>
-    </div>
+    <h2>3. How We Use Information</h2>
+    <p>Any collected information is utilized strictly to:</p>
+    <ul>
+      <li>Authenticate your session securely via Firebase Authentication.</li>
+      <li>Remember your enabled platforms and custom filter configurations.</li>
+      <li>Deliver non-algorithmic notification alerts for direct messages (if enabled).</li>
+    </ul>
 
-    <div class="card">
-      <h2>4. Data Storage & Security</h2>
-      <p>Authentication tokens and account profiles are safeguarded using Google Firebase's industry-standard infrastructure. Local settings and filter rules are encrypted and persisted securely in your device's protected app sandbox.</p>
-    </div>
+    <h2>4. Data Storage & Security</h2>
+    <p>Authentication tokens and account profiles are safeguarded using Google Firebase's industry-standard infrastructure. Local settings and filter rules are persisted securely in your device's protected app sandbox.</p>
 
-    <div class="card">
-      <h2>5. Third-Party Services</h2>
-      <p>Outloop interacts with third-party web services (e.g. YouTube, Instagram, TikTok, Facebook) via standard browser sessions. Third-party sites govern their own privacy practices according to their respective policies. Outloop's filter rules strip distracting feeds, algorithm recommendation carousels, and tracking elements.</p>
-    </div>
+    <h2>5. Third-Party Services</h2>
+    <p>Hublu interacts with third-party web services (e.g. YouTube, Instagram, X, Facebook, Reddit, Snapchat) via standard browser sessions. Third-party sites govern their own privacy practices according to their respective policies. Hublu's filter rules strip distracting feeds, algorithm recommendation carousels, and tracking elements.</p>
 
-    <div class="card">
-      <h2>6. Your Rights & Account Deletion</h2>
-      <p>You maintain full control over your data. You may delete your account and all associated Firebase records at any time directly within the app under <em>Profile &rarr; Delete Account</em>.</p>
-    </div>
+    <h2>6. Your Rights & Account Deletion</h2>
+    <p>You maintain full control over your data. You may delete your account and all associated Firebase records at any time directly within the app under Profile &rarr; Delete Account.</p>
 
-    <div class="contact-box">
-      Questions regarding this Privacy Policy? Contact our privacy team at:
-      <br><br>
-      <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a>
-    </div>
+    <h2>7. Contact Information</h2>
+    <p>If you have any questions regarding this Privacy Policy, you may contact our privacy team at <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a>.</p>
   </div>
 </body>
 </html>
