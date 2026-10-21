@@ -3,166 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms and Conditions - Outloop</title>
+  <title>Terms and Conditions - Hublu</title>
   <style>
-    :root, html.light, body.light {
-      --primary: #FF4500;
+    :root, html, body {
       --bg: #F6F2EC;
       --text: #171717;
       --muted: #6B6861;
-      --card-bg: #FFFFFF;
-      --border: rgba(43, 43, 43, 0.08);
+      --link: #171717;
       color-scheme: light;
     }
-    html.dark, body.dark {
-      --primary: #FF4500;
-      --bg: #171717;
-      --text: #FFFFFF;
-      --muted: #8E8E93;
-      --card-bg: #2B2B2B;
-      --border: rgba(255, 255, 255, 0.08);
-      color-scheme: dark;
-    }
     @media (prefers-color-scheme: dark) {
-      body:not(.light) {
+      :root, html, body {
         --bg: #171717;
-        --text: #FFFFFF;
+        --text: #EDEDED;
         --muted: #8E8E93;
-        --card-bg: #2B2B2B;
-        --border: rgba(255, 255, 255, 0.08);
+        --link: #EDEDED;
         color-scheme: dark;
       }
+    }
+    html.dark, body.dark {
+      --bg: #171717;
+      --text: #EDEDED;
+      --muted: #8E8E93;
+      --link: #EDEDED;
+      color-scheme: dark;
+    }
+    html.light, body.light {
+      --bg: #F6F2EC;
+      --text: #171717;
+      --muted: #6B6861;
+      --link: #171717;
+      color-scheme: light;
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
       margin: 0;
       padding: 24px 20px 48px;
+      -webkit-font-smoothing: antialiased;
     }
-    .container {
+    .document {
       max-width: 680px;
       margin: 0 auto;
     }
-    header {
-      margin-bottom: 28px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-    }
-    .badge {
-      display: inline-block;
-      background-color: rgba(255, 109, 0, 0.15);
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
     h1 {
-      font-size: 26px;
-      font-weight: 800;
-      margin: 0 0 6px;
-      letter-spacing: -0.5px;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 4px;
+      color: var(--text);
+      letter-spacing: -0.3px;
     }
-    .date {
-      color: var(--muted);
+    .metadata {
       font-size: 13px;
-    }
-    .card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 20px;
-      border: 1px solid var(--border);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      color: var(--muted);
+      margin-bottom: 28px;
     }
     h2 {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: var(--primary);
+      margin: 28px 0 10px;
+      color: var(--text);
+      letter-spacing: -0.2px;
     }
     p {
-      margin: 0 0 12px;
+      margin: 0 0 14px;
       font-size: 14.5px;
       color: var(--text);
     }
-    ul {
-      margin: 0 0 12px;
-      padding-left: 20px;
-      font-size: 14px;
+    ul, ol {
+      margin: 0 0 16px;
+      padding-left: 22px;
+      font-size: 14.5px;
       color: var(--text);
     }
     li {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
-    .contact-box {
-      background: rgba(255, 109, 0, 0.08);
-      border: 1px dashed var(--primary);
-      border-radius: 14px;
-      padding: 16px;
-      text-align: center;
-      margin-top: 24px;
-    }
-    .contact-box a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 700;
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="badge">Legal Agreement</div>
-      <h1>Terms & Conditions</h1>
-      <div class="date">Last Updated: October 2026 • Version 1.0</div>
-    </header>
+  <div class="document">
+    <h1>Terms & Conditions</h1>
+    <div class="metadata">Last Updated: October 2026 • Version 1.0</div>
 
-    <div class="card">
-      <h2>1. Acceptance of Terms</h2>
-      <p>By downloading, installing, or using Outloop, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please discontinue use and uninstall the application.</p>
-    </div>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By downloading, installing, or using Hublu, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please discontinue use and uninstall the application.</p>
 
-    <div class="card">
-      <h2>2. Description of Service</h2>
-      <p>Outloop is a digital wellbeing utility and specialized sandboxed browser engineered to help users access social networks intentionally. The application utilizes client-side style rules and DOM filtering scripts solely within the user's local webview session to hide addictive short-form video shelves (e.g. YouTube Shorts, Instagram Reels, TikTok For You feeds) while preserving messaging, search, and standard navigation.</p>
-    </div>
+    <h2>2. Description of Service</h2>
+    <p>Hublu is a digital wellbeing utility and specialized sandboxed browser engineered to help users access social networks intentionally. The application utilizes client-side style rules and DOM filtering scripts solely within the user's local webview session to hide addictive short-form video shelves (such as YouTube Shorts and Instagram Reels) while preserving direct messaging, search, and standard intentional navigation.</p>
 
-    <div class="card">
-      <h2>3. Disclaimer of Affiliation</h2>
-      <p>Outloop is an independent software application and is not affiliated, endorsed, sponsored, or certified by Google, YouTube, Meta, Instagram, TikTok, ByteDance, X Corp, Snap Inc., or any other third-party platform. All trademarks, service marks, and brand logos are the property of their respective owners.</p>
-    </div>
+    <h2>3. Disclaimer of Affiliation</h2>
+    <p>Hublu is an independent software application and is not affiliated, endorsed, sponsored, or certified by Google, YouTube, Meta, Instagram, X Corp, Snap Inc., Reddit, or any other third-party platform. All trademarks, service marks, and brand logos are the property of their respective owners.</p>
 
-    <div class="card">
-      <h2>4. User Responsibilities & Acceptable Use</h2>
-      <ul>
-        <li>You agree to use Outloop in compliance with all applicable local, national, and international laws.</li>
-        <li>You remain solely responsible for your login credentials and personal accounts on third-party platforms.</li>
-        <li>You agree not to reverse engineer, decompile, or misuse the application for unauthorized automated scraping or malicious interference.</li>
-      </ul>
-    </div>
+    <h2>4. User Responsibilities & Acceptable Use</h2>
+    <ul>
+      <li>You agree to use Hublu in compliance with all applicable local, national, and international laws.</li>
+      <li>You remain solely responsible for your login credentials and personal accounts on third-party platforms.</li>
+      <li>You agree not to reverse engineer, decompile, or misuse the application for unauthorized automated scraping or malicious interference.</li>
+    </ul>
 
-    <div class="card">
-      <h2>5. Warranty & Limitation of Liability</h2>
-      <p>The application is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. Because third-party platforms frequently update their website code, Outloop does not warrant that third-party websites will always remain free from layout changes or unexpected rendering anomalies.</p>
-    </div>
+    <h2>5. Warranty & Limitation of Liability</h2>
+    <p>The application is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. Because third-party platforms frequently update their website code, Hublu does not warrant that third-party websites will always remain free from layout changes or unexpected rendering anomalies.</p>
 
-    <div class="card">
-      <h2>6. Modifications to Terms</h2>
-      <p>We reserve the right to revise or update these Terms & Conditions as necessary. Continued use of the application after changes constitute acceptance of the updated terms.</p>
-    </div>
+    <h2>6. Modifications to Terms</h2>
+    <p>We reserve the right to revise or update these Terms & Conditions as necessary. Continued use of the application after changes constitute acceptance of the updated terms.</p>
 
-    <div class="contact-box">
-      Questions regarding these Terms? Reach out to:
-      <br><br>
-      <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a>
-    </div>
+    <h2>7. Contact Information</h2>
+    <p>If you have any questions regarding these Terms & Conditions, you may contact us at <a href="mailto:delsigate@gmail.com">delsigate@gmail.com</a>.</p>
   </div>
 </body>
 </html>
